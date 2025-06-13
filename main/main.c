@@ -123,7 +123,7 @@ static void scan_i2c(char* out, size_t max_len) {
             pos += snprintf(out + pos, max_len - pos, "%d,", addr);
         }
     }
-    if (pos > 7 && out[pos - 1] == ',') pos--;  a
+    if (pos > 7 && out[pos - 1] == ',') pos--;  
     snprintf(out + pos, max_len - pos, "]}");
 }
 
